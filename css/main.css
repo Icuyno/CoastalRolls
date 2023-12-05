@@ -175,6 +175,10 @@ p {
   z-index: 99;
 }
 
+.site-header__logo {
+    width: 4rem;
+}
+
 .nav-list,
 .nav-list li {
   padding: 0;
