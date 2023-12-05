@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,68 +8,79 @@
     <title>Coastal Rolls</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/custom.css">			
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="lightbox2-dev/dist/css/lightbox.min.css">
 </head>
 
 <body>
     <header class="site-header">
         <div class="container">
             <div class="site-header__wrapper">
-                   <!-- HAMBURGER MENU ICON -->
-                   <div class="site-header__menu-bars">
-                        <a href="#" class="js-menu-open">
-                            <i class="fa-solid fa-bars icon"></i>
-                        </a>
-                   </div>
+                <!-- HAMBURGER MENU ICON -->
+                <div class="site-header__menu-bars">
+                    <a href="#" class="js-menu-open">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="32" viewBox="0 0 36 32" fill="none">
+                            <path d="M0 0V4.5911H36V0H0ZM0 13.6356V18.2267H36V13.6356H0ZM0 27.4089V32H36V27.4089H0Z"
+                                fill="#F7E5CA" />
+                        </svg>
+                    </a>
+                </div>
                 <!-- HAMBURGER MENU ICON ENDS -->
                 <nav class="site-header__menu js-menu" data-open="0">
                     <ul>
                         <!-- CLOSE ICON -->
-                        <li class="site-header__close"> <a href="#" class="js-menu-close">
-                            <i class="fa-solid fa-xmark icon"></i>
+                        <li class="site-header__close">
+                            <a href="#" class="js-menu-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path
+                                        d="M5.74777 0L0 5.74777L2.93503 8.6828L10.1911 16.0611L2.93503 23.3172L0 26.1299L5.74777 32L8.6828 29.065L16.0611 21.6866L23.3172 29.065L26.1299 32L32 26.1299L29.065 23.3172L21.6866 16.0611L29.065 8.6828L32 5.74777L26.1299 0L23.3172 2.93503L16.0611 10.1911L8.6828 2.93503L5.74777 0Z"
+                                        fill="#F7E5CA" />
+                                </svg>
                         </li>
-                        <!-- CLOSE ICON ENDS -->  
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Reservations</a></li>
-                            <li><a href="#">Contact</a></li>
                     </ul>
-                </nav> 
+                    <!-- CLOSE ICON ENDS -->
+                    <div class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li><a href="#">Location & Hours</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </div>
+                </nav>
                 <div class="site-header__logo">
                     <a href="#">
-                        <img src="images/logo.svg"  alt="Coastal Rolls">
+                        <img src="images/logo.svg" alt="Coastal Rolls">
                     </a>
-                </div>           
-            </div>  
+                </div>
+            </div>
         </div>
     </header>
     <section class="home-banner">
         <div class="title-text">
-            <h1 class="title"> COASTAL ROLLS </h1>
+            <h1 class="title">
+                COASTAL
+                <br>
+                ROLLS
+            </h1>
         </div>
         <div class="star_element">
-            <img src="images/star.svg" alt="">
+            <img src="images/star.svg" alt="blue star icon">
         </div>
         <div class="hero-image">
-            <picture>
-                <source srcset="images/hero_image_small.jpg" media="(min-width: 320px)">
-                <source srcset="images/hero_image_medium.jpg" media="(min-width: 768px)">
-                <source srcset="images/hero_image_large.jpg" media="(min-width: 1280px)">
-                <img src="images/hero-image-default.jpg" alt="Pink sushi rolls with tuna">
-            </picture>
         </div>
         <div class="subtitle-text">
-            <h3> 123 MAIN ST </h3>
-            <h3> MON - THURS 12PM - 10PM </h3>
-            <h3> FRI - SAT 3PM - 11PM </h3>
+            <h4> 123 MAIN ST </h4>
+            <h4> MON - THURS 12PM - 10PM </h4>
+            <h4> FRI - SAT 3PM - 11PM </h4>
         </div>
-        <div class="btn">
-            <a href="#">
-                <button>book now</button>
+        <div class="button-container">
+        <button class="book_btn">
+            <a class="book_link" href="#">
+                book now
             </a>
+        </button>
         </div>
     </section>
     <section class="menu-items">
@@ -117,7 +129,8 @@
                     <div class="menu_text">
                         <h5> Strawberry Dream Roll </h5>
                         <h5> $8.00 </h5>
-                        <p> Fresh strawberries, creamy filling, and a fried exterior, drizzled with strawberry puree </p>
+                        <p> Fresh strawberries, creamy filling, and a fried exterior, drizzled with strawberry puree
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -128,47 +141,109 @@
                         <p> Shrimp tempura and cream cheese wrapped in nori and black rice </p>
                     </div>
                 </li>
-            </ul>  
-        </div>        
-    </section>
-    <section class="gallery_container">
-     <div class="title_text_container">
-        <h2 class="title"> THE GALLERY </h2> 
-     </div>
-     <div class="slider_container">
-        <div class="slider"><img src="images/slide1.jpg" alt="tuna nigiri"></div>
-        <div class="slider"><img src="images/slide2.jpg" alt="salmon nigiri"></div>
-        <div class="slider"><img src="images/slide3.jpg" alt="salmon sashimi"></div> 
-        <div class="slider"><img src="images/slide4.jpg" alt="shelf with beverages in a restaurant"></div>
-        <div class="slider"><img src="images/slide5.jpg" alt="neon-lit window display, outside a restaurant"></div>
-     </div>
-    </section>
-    <section class="location_section">
-        <div class="location_title">
-            <h2> DROP BY, WE'RE LOCATED HERE </h2>
-        </div>
-        <div class="map_frame_container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10410.465903921086!2d-123.10852109772782!3d49.283664068112444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717130bd25c5%3A0x23ac74c19ac998c0!2s123%20Main%20St%2C%20Vancouver%2C%20BC%20V6A%202S5!5e0!3m2!1sen!2sca!4v1680671891961!5m2!1sen!2sca" width="320vw" height="400vw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </ul>
         </div>
     </section>
+
+    <section class="gallery">
+        <div class="title_text_container">
+            <h2>THE GALLERY</h2>
+        </div>
+        <div class="grid-gallery">
+            <div class="grid-item">
+                <a href="images/slide5.jpg" data-lightbox="gridImage">
+                    <img src="images/slide5.jpg" alt="neon lights in a restaurant">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/item2.jpg" data-lightbox="gridImage">
+                    <img src="images/item2.jpg" alt="raw salmon dish with cream cheese">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/item3.jpg" data-lightbox="gridImage">
+                    <img src="images/item3.jpg" alt="tuna nigiri">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/item4.jpg" data-lightbox="gridImage">
+                    <img src="images/item4.jpg" alt="salmon nigiri">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <h2>
+            DROP BY,
+            <br>
+            WE'RE LOCATED
+            <br>
+            HERE
+        </h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.617202787375!2d-123.10465870731701!3d49.28365029763209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717130bd25c5%3A0x23ac74c19ac998c0!2s123%20Main%20St%2C%20Vancouver%2C%20BC%20V6A%202S5!5e0!3m2!1sen!2sca!4v1701730547626!5m2!1sen!2sca"
+                width="100%" height="100%" ;style="border:0;" allowfullscreen="yes" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="button-container">
+        <button class="book_btn">
+            <a class="book_link" href="#">
+                call us 867-5309
+            </a>
+        </button>
+        </div>
+    </section>
+
     <section class="footer_container">
         <div class="newsletter_container">
             <h4 class="newsletter_text"> Subscribe to our newsletter for updates and special offers </h4>
             <div class="email_input_container">
-                <h6> Email* </h6>
+                <label for="email">Email*</label>
+                <input type="email" class="input-field" />
             </div>
-            <div class="btn_container">
-                <button class="email_btn">submit</button>
-            </div>
+            <div class="button-container">
+        <button class="submitbook_btn">
+            <a class="submitbook_link" href="#">
+                submit
+            </a>
+        </button>
+        </div>
         </div>
         <div class="footer_nav_container">
             <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Gallery</li>
-                <li>Reservations</li>
-                <li>Location</li>
-                <li>Contact</li>
+                <li> 
+                <a href="#">
+                    Home
+                </a>
+                </li>
+                <li> 
+                <a href="#">
+                    Menu
+                </a>
+                </li>
+                <li> 
+                <a href="#">
+                    Gallery
+                </a>
+                </li>
+                <li> 
+                <a href="#">
+                    Reservations
+                </a>
+                </li>
+                <li> 
+                <a href="#">
+                    Location
+                </a>
+                </li>
+                <li> 
+                <a href="#">
+                    Contact
+                </a>
+                </li>
             </ul>
         </div>
         <div class="icons_container">
@@ -176,13 +251,15 @@
             <img src="images/instagram.svg">
             <img src="images/linkedin-in.svg">
         </div>
+        <div class="icons_container">
+            <h6>&copy; 2023 Coastal Rolls</h6>
+        </div>
     </section>
 </body>
 
 <!-- Scripts -->
-<script src="https://kit.fontawesome.com/519db44da6.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="lightbox2-dev/dist/js/lightbox.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/main.js"></script>
 

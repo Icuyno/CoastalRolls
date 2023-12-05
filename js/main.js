@@ -1,14 +1,14 @@
 /* JS To Open & Close The Menu */
-const menu = document.querySelector('.js-menu');
-const menu_open = document.querySelector('.js-menu-open');
-const menu_close = document.querySelector('.js-menu-close');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuOpenBtn = document.querySelector(".js-menu-open");
+  const menuCloseBtn = document.querySelector(".js-menu-close");
+  const menu = document.querySelector(".js-menu");
 
-menu_open.addEventListener('click', () => {
-    console.log('Menu opened');
-    menu.classList.add('open');
-})
+  menuOpenBtn.addEventListener("click", function () {
+    menu.style.right = "0";
+  });
 
-menu_close.addEventListener('click', () => {
-    menu.classList.remove('open');
-})
-
+  menuCloseBtn.addEventListener("click", function () {
+    menu.style.right = "-100vw";
+  });
+});
